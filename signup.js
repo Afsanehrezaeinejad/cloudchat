@@ -30,7 +30,7 @@ signup.onsubmit = (e) => {
     if (password) {
         if (password.length > 6) {
             if (password == cfpass) {
-                console.log(data)
+                signUp_process(data)
             } else {
                 console.log("aloooo")
                 setTextError("#cfpass-err", "Passwords Do Not Match")
@@ -49,4 +49,21 @@ signup.onsubmit = (e) => {
 
 let setTextError = (tagname, content) => {
     document.querySelector(tagname).innerHTML = content
+}
+
+let signUp_process = async (data)=>{
+    let email = data.email
+    let password = data.password
+    let name = data.name
+    try {
+        await firebase.auth().createUserWithEmailAndPassword(email, password)
+        await firebase.auth().currentUser.updateProfile({
+            displayName: name
+        })
+        await firebase.auth().currentUser.sendEmailVerification()
+        alert("success")
+    } catch (error) {
+        let message = error.message
+        alert(message)
+    }
 }
