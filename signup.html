@@ -44,22 +44,30 @@
             <h1 class="h3 mb-3 fw-normal">Sign up on CloudChat</h1>
 
             <div class="form-floating">
-                <input name="name" type="name" class="form-control" id="floatingInput" placeholder="Agent Minimum">
+                <input name="name" type="name" class="form-control" id="floatingInput" placeholder="Agent Minimum"
+                    required>
                 <label for="floatingInput">Name</label>
             </div>
+            <p id="name-err" class="error"></p>
+
             <div class="form-floating">
-                <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                    required>
                 <label for="floatingInput">Email address</label>
             </div>
+            <p id="email-err" class="error"></p>
             <div class="form-floating">
-                <input name="password" type="password" class="form-control" id="floatingPassword"
-                    placeholder="Password">
+                <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    required>
                 <label for="floatingPassword">Password</label>
             </div>
+            <p id="password-err" class="error"></p>
             <div class="form-floating">
-                <input name="cfpass" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input name="cfpass" type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    required>
                 <label for="floatingPassword">Confirm Password</label>
             </div>
+            <p id="cfpass-err" class="error"></p>
             <p>Already have an account? <a href="https://agentminimum.github.io/cloudchat/signin.html">Sign In</a></p>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
             <p class="mt-5 mb-3 text-muted">© CloudChat 2021</p>
