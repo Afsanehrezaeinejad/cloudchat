@@ -38,22 +38,22 @@
 <body class="text-center" data-new-gr-c-s-check-loaded="14.988.0" data-gr-ext-installed="">
 
     <main class="form-signin">
-        <form>
+        <form id="form_signin">
             <img class="mb-4"
                 src="https://th.bing.com/th/id/Rabce6e302ea79f560f2e5b7434cae4a0?rik=FHzuv2CTmPLQnw&pid=ImgRaw" alt=""
                 width="64.5" height="71.375">
             <h1 class="h3 mb-3 fw-normal">Sign in to CloudChat</h1>
 
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <div class="form-floating ">
+                <input type="email"  name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
             </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <div class="form-floating mt-3">
+                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                 <label for="floatingPassword">Password</label>
             </div>
 
-            <div class="checkbox mb-3">
+            <div class="checkbox mb-3 mt-3">
                 <label>
                     <input type="checkbox" value="remember-me"> Remember Me
                 </label>
@@ -63,7 +63,31 @@
             <p class="mt-5 mb-3 text-muted">© CloudChat 2021</p>
         </form>
     </main>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB8cYfEaG9bEvcyFDI-s7rTBSH-VTEy21c",
+            authDomain: "agentminimum-cloudchat.firebaseapp.com",
+            projectId: "agentminimum-cloudchat",
+            storageBucket: "agentminimum-cloudchat.appspot.com",
+            messagingSenderId: "200465671800",
+            appId: "1:200465671800:web:eb19ac23f64011709b6f8d",
+            measurementId: "G-3SP8CCPS2S"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./signin.js"></script>
 </body>
 
