@@ -1,4 +1,4 @@
 # CloudChat by AgentMinimum
-### https://agentminimum.github.io/signup.html/
-### https://agentminimum.github.io/signin.html/
-### https://agentminimum.github.io/chat.html
+### https://agentminimum.github.io/cloudchat/signup.html/
+### https://agentminimum.github.io/cloudchat/signin.html/
+### https://agentminimum.github.io/cloudchat/chat.html
