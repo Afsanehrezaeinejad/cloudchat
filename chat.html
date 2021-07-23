@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>CloudChat | Chat</title>
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon"
+        href="https://th.bing.com/th/id/Rabce6e302ea79f560f2e5b7434cae4a0?rik=FHzuv2CTmPLQnw&pid=ImgRaw"
+        sizes="180x180">
+    <link rel="icon" href="https://th.bing.com/th/id/Rabce6e302ea79f560f2e5b7434cae4a0?rik=FHzuv2CTmPLQnw&pid=ImgRaw"
+        sizes="32x32" type="image/png">
+    <link rel="icon" href="https://th.bing.com/th/id/Rabce6e302ea79f560f2e5b7434cae4a0?rik=FHzuv2CTmPLQnw&pid=ImgRaw"
+        sizes="16x16" type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon"
+        href="https://th.bing.com/th/id/Rabce6e302ea79f560f2e5b7434cae4a0?rik=FHzuv2CTmPLQnw&pid=ImgRaw"
+        color="#7952b3">
+    <link rel="icon" href="https://th.bing.com/th/id/Rabce6e302ea79f560f2e5b7434cae4a0?rik=FHzuv2CTmPLQnw&pid=ImgRaw">
+    <meta name="theme-color" content="#7952b3">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyD3PWLu1_yyOJP410XW6XQV-A7P_a5V5lI",
+            authDomain: "bonnghe-chat.firebaseapp.com",
+            projectId: "bonnghe-chat",
+            storageBucket: "bonnghe-chat.appspot.com",
+            messagingSenderId: "118813511998",
+            appId: "1:118813511998:web:c5fd1b21273169dc055c6f",
+            measurementId: "G-ZFY4VWVTCE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </head>
+
 <body>
-    <h1>A được rồi</h1>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB8cYfEaG9bEvcyFDI-s7rTBSH-VTEy21c",
+            authDomain: "agentminimum-cloudchat.firebaseapp.com",
+            projectId: "agentminimum-cloudchat",
+            storageBucket: "agentminimum-cloudchat.appspot.com",
+            messagingSenderId: "200465671800",
+            appId: "1:200465671800:web:eb19ac23f64011709b6f8d",
+            measurementId: "G-3SP8CCPS2S"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./chat.js"></script>
 </body>
+
 </html>
