@@ -1,117 +1,164 @@
 body {
-    display:flex;
-    align-items:center;
-    flex-direction:row;
-    justify-content:space-around;
-    background-color:darkslategray;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    transition: 0.2s;
 }
 
 .userbox {
-    margin-top:2.5%;
-    width:27.5%;
-    height:90vh;
-    background-color:transparent;
-    border-radius:25px;
+    margin-top: 2.5%;
+    width: 27.5%;
+    height: 90vh;
+    background-color: transparent;
+    border-radius: 25px;
 }
 
 .users {
-    margin-bottom:5%;
-    width:100%;
-    height:82.5%;
-    background-color:royalblue;
-    border-radius:25px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 82.5%;
+    background-color: royalblue;
+    border-radius: 25px;
 }
 
 .profile {
-    width:100%;
-    height:15%;
-    background-color:darkslateblue;
-    border-radius:25px;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+    width: 100%;
+    height: 15%;
+    background-color: darkslateblue;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .chat {
-    margin-top:2.5%;
-    width:66%;
-    height:90vh;
-    background-color:transparent;
-    border-radius:25px;
+    margin-top: 2.5%;
+    width: 66%;
+    height: 90vh;
+    background-color: transparent;
+    border-radius: 25px;
 }
 
 .messages {
-    margin-bottom:2.5%;
-    width:100%;
-    height:85%;
-    background-color:lightslategrey;
-    border-top-left-radius:25px;
-    border-top-right-radius:25px;
+    margin-bottom: 2.5%;
+    width: 100%;
+    height: 85%;
+    background-color: lightslategrey;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .chatbox {
-    width:100%;
-    height:11%;
-    background-color:transparent;
-    border-bottom-left-radius:25px;
-    border-bottom-right-radius:25px;
+    width: 100%;
+    height: 11%;
+    background-color: transparent;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .input-msg {
-    width:auto;
-    height:10vh;
-    border-bottom-left-radius:25px;
+    width: auto;
+    height: 10vh;
+    border-bottom-left-radius: 25px;
 }
 
 .enter-msg-btn {
-    width:15%;
-    height:10vh;
-    color:white;
-    background-color:dodgerblue;
-    border:dodgerblue;
-    border-bottom-right-radius:25px;
+    width: 15%;
+    height: 10vh;
+    color: white;
+    background-color: dodgerblue;
+    border: dodgerblue;
+    border-bottom-right-radius: 25px;
 }
 
 .info {
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    border-right:5px solid dodgerblue;
-    padding-right:5.75%;
-    padding-top:3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 5px solid dodgerblue;
+    padding-right: 10%;
+    padding-top: 3%;
 }
 
 .profile-labels {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    position: relative;
+    text-align: center;
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+    margin-bottom: 15%;
 }
 
 .pfp {
-    margin-top:5%;
-    width:35%;
-    height:auto;
+    margin-top: 5%;
+    width: 35%;
+    height: auto;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .pfp-label {
-    font-size:20px;
-    color:lightgray;
-    margin:none;
-    font-weight:bolder;
-}
-
-.switch-label {
-    color:lightgray;
-    font-size:125%;
-    margin:none;
+    font-size: 20px;
+    color: lightgray;
+    margin: none;
+    font-weight: bolder;
 }
 
 .logout-label {
-    font-size:125%;
-    color:lightgray;
-    margin:none;
-    font-weight:100;
+    margin-top: 27.5%;
+    font-size: 125%;
+    color: lightgray;
+    font-weight: 100;
+}
+
+body.dark {
+    background: darkslategray;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: darkslategray;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
 }

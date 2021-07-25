@@ -14,3 +14,9 @@ Toast.fire({
     icon: 'success',
     title: 'Signed in successfully'
 })
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
