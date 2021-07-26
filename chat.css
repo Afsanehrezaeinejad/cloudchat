@@ -162,3 +162,40 @@ body.dark {
 .checkbox:checked+.label .ball {
     transform: translateX(24px);
 }
+
+.users {
+    display: flex;
+    justify-content: center;;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    width: 90%;
+    height: 15%;
+    margin-top: 5%;
+    border-bottom: 3px solid dimgray;
+    border-right: 3px solid dimgray;
+    border-radius: 25px;
+    background-color: royalblue;
+}
+
+.user:hover {
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+.userpfp {
+    height: 85%;
+}
+
+.username {
+    width: 50%;
+    height: 20%;
+    font-size: 20px;
+    color: lightgray;
+    font-weight: bolder;
+}
