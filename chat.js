@@ -20,3 +20,11 @@ const chk = document.getElementById('chk');
 chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
 });
+
+let signOut = () => {
+    firebase.auth().signOut().then(() => {
+        window.open("./signin.html", "_self")
+    }, (error) => {
+        alert(error)
+    })
+}
